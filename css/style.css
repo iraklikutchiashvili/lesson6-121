@@ -1,0 +1,43 @@
+.background{
+	height: 900px;
+	width: 1800px;
+}
+.wraper {
+	position: relative;
+	width: 1800px;
+	height: 900px;
+}
+.harry {
+	height: 160px;
+	width: 280px;
+	position: absolute;
+	right: 100px;
+	top: 100px;
+	animation: animationharry 4s infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+.snitch {
+	height: 60px;
+	width: 100px;
+	position: absolute;
+	top: 150px;
+	right: 400px;
+	animation: animationsnitch 4s infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+@keyframes animationharry {
+	0% { right: 200px; }
+	50% { right: 400px; }
+	75% { right: 800px; }
+	90% { right: 1400px; }
+	100% { right: 1800px; }
+}
+@keyframes animationsnitch {
+	0% { right: 400px; }
+	50% { right: 800px; }
+	75% { right: 1600px; }
+	90% { right: 1800px; }
+	100% { right: 2000px; }
+}
